@@ -1,199 +1,157 @@
-> Multilingual Notice: This document is published in dual languages (Korean/English). v5.5 2026-09-22 (Korean version: README.ko.md)
-> Original Authority Notice: The legal and engineering authority of this technical specification resides in the Korean original (README.ko.md). The English version serves solely as a secondary reference. (README.ko.md is authoritative original)
-> 
-LAST-LIGHT — Auxiliary Evacuation Guidance System Utilizing Multisensory Acoustics, Co-Survival Bridges, and Heterogeneous Multi-Device Distributed Infrastructure
-Subtitle: Defensive Publication White Paper on Zero-Point Calibration, Multisensory Haptics, and Distributed Black Box Infrastructure via ISO 7010 Signs, Fire Hose Cabinets, Smart Raceways, IMO SOLAS Marine Infrastructure, Deep Underground Chambers, Logistics/Fab/Cleanroom Explosion-Proof/Fire-Rated Enclosures, Track Modules, AR Glasses, Smart Rings, and Robotics (Ver. 5.5)
- * Official Document Classification: Defensive Publication / Prior Art White Paper
- * Conception Date: 2026-07-30 / Final Revision Date (v5.5): 2026-09-22
- * Original IP Holder: deundeuni (Project: soma-moa)
- * Official Repository: github.com/deundeuni/LAST-LIGHT | Official Domain: somamoa.ai.kr
- * Applicable License: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
- * Primary Keywords: LAST-LIGHT, Auxiliary Evacuation Guidance, Position Calibration, Infrastructure Anchoring, Structure First Principle, ISO 7010, IMO SOLAS, LLL (Low Location Lighting), Photoluminescent, Bulkhead, Logistics Warehouse Fire Shutter Cabinet, Semiconductor Fab VMB (Valve Manifold Box) / Gas Cabinet / Chemical Distribution Box, Secondary Containment, Sump Leak Sensor, False Alarm Cross-Verification, SEMI S2/S8, Cleanroom Explosion-Proof Enclosures Complying with HACCP Sanitary Standards, Deep Underground Tunnel, Co-Survival Bridge, Haptic Compass, BLE Auracast, Tri-State Isolation, T-Reg Suppressor, Distributed Local Black Box, Fire-Rated Hose Chamber, Small Cell DAS Integration, Space Base Evacuation, Orbital Module Anchor, AR Glasses HUD, Smart Ring, WebAR Quick Release, Visual SLAM Rapid Drift Reset, smart-system-multi-survival-architecture, chiplet-apu-multi-system-survival-architecture, ARCHITECTURE_STRATEGY, CWP, MAX-LIFE-ICE-BELT
-0. Conception Declaration and Motivation
-0.1 Field-Based Motivation and Co-Survival Philosophy
-This structural design originates from a field-driven motivation to assist evacuees in escaping safely and to support firefighters and emergency personnel entering dangerous environments in returning safely to their families.
-During fires and severe disasters, environments experience severe sensory loss caused by dense smoke and power blackouts (visual isolation) combined with high-decibel emergency sirens and crowd panic noise exceeding 100 dB (auditory impairment). Furthermore, in deep underground commercial areas, subterranean tunnels, automated logistics warehouses, semiconductor fab cleanrooms, cold chain facilities, microgravity orbital modules (space bases), and enclosed ship cabins or corridors on passenger vessels, rapid smoke accumulation, structural tilting (listing), and complete darkness can render overhead visual exit signs ineffective. Under such conditions, conventional voice guidance and high-mounted visual markers may suffer reduced functionality.
-To address cumulative drift errors and signal dead zones associated with wireless positioning or standalone Inertial Measurement Units (IMUs) in indoor, deep subterranean, enclosed industrial, maritime, and orbital environments, this system establishes an "Infrastructure Anchoring" mechanism. It utilizes legally mandated, permanently installed infrastructure—such as 24/7 illuminated ISO 7010 emergency exit signs, IMO SOLAS Low Location Lighting (LLL), photoluminescent strips, indoor fire hose/alarm cabinets, ceiling and wall raceways, and industrial fire-rated/explosion-proof enclosures—as absolute visual, optical, acoustic, and RF zero-point anchors to recalibrate spatial position coordinates in real time.
-By employing this framework without relying solely on visual, auditory, or language-bound cues, the system conveys directional guidance through tactile feedback delivered via personal or spacesuit-integrated "Co-Survival Bridges," AR glasses 3D HUDs, smart rings, and wearable units. Simultaneously, heat-resistant distributed local black boxes installed within fire hose cabinets, industrial fire/explosion-rated enclosures, marine bulkheads, and orbital fire zones record recent evacuation trajectory data in a ring buffer format. This data supports post-disaster cause analysis and feeds into an evolving AI framework designed to refine evacuation routes.
-Furthermore, the system adopts a "Co-Survival" philosophy as a core design principle: wearers who gain directional clarity through intuitive haptic feedback can naturally lead nearby evacuees who may be disoriented. This positions the technology as a supportive safety framework that reinforces human solidarity and mutual assistance during emergencies.
-0.2 Master Concept and Sensor Fusion Standards
-The zero-point calibration and correction mechanism based on visual, optical, acoustic, and RF ANCHORs disclosed in this specification functions as the Master Reference Framework for the entire positioning and auxiliary guidance system.
-Any expanded configuration integrating single or multiple combinations of gyroscopes, accelerometers, IMUs, microphone arrays, acoustic/ultrasonic sensors, bone-conduction/tactile haptic transducers, BLE Auracast RF modules, UWB modules, 5G/6G small cells, Distributed Antenna Systems (DAS), heat-resistant black box memories, LiDAR, ToF sensors, thermal imaging, infrared, or AR/MR vision cameras represents a subordinate extension that references this zero-point calibration mechanism as its master baseline, aiming to fall within the comprehensive scope of this prior art.
- * Structure First Principle & Topological Anchoring — The system prioritizes the topological layout of physical structural elements (such as pictograms, fire hose cabinets, raceways, SOLAS bulkheads, and industrial fire/explosion-rated enclosures) over arbitrary sensor deployment. All sensors function as auxiliary tools subordinate to this physical structure. This "Structure First" principle aligns with the "Structure over Capacity" philosophy in Section 0.2 of the master survival architecture (smart-system-multi-survival-architecture) and shares the master fault-tolerant philosophy of chiplet-apu-multi-system-survival-architecture, implementing spatial and topological anchoring tailored for emergency evacuation environments.
- * Infrastructure Anchoring Override — To mitigate cumulative errors and signal shadows inherent in inertial navigation or external wireless positioning within indoor, deep underground, industrial, maritime, and orbital environments, the system utilizes legally mandated fixed infrastructure indicators and modules as absolute zero-point anchors (L0 Anchors), declaring this calibration mechanism a primary point of differentiation.
- * Non-Obvious Fire/Explosion-Rated Infrastructure Selection — The L0 Anchor hosts—including indoor fire hose cabinets, emergency bell control boxes, marine bulkhead chambers, logistics warehouse fire shutter control boxes, sprinkler pump rooms, rack fire-rated bases, semiconductor fab special gas cabinets, chemical shower booths, air showers, VMBs (Valve Manifold Boxes), chemical distribution boxes, food/pharma cold chain explosion-proof enclosures complying with HACCP sanitary standards, and freezer fire door frames—are legally mandated fire-rated and explosion-proof structures under applicable fire safety and explosion protection standards (e.g., NFPC, IMO SOLAS, KCs explosion-proof certifications). In particular, VMBs and chemical distribution boxes are chemical-specific structures featuring secondary containment chambers, continuous negative pressure exhaust, double-walled piping, and sump leak sensor interlocks. Unlike generic beacons or decorative signage, deploying zero-point anchors and local black box receivers within these legally and physically survivable enclosures provides technical differentiation over conventional beacon placements.
- * Fire Alarm & Heterogeneous Sensor Cross-Verification — To prevent crowd panic caused by false alarms (e.g., fire detector smoke/humidity glitches), the system performs defensive verification control. It activates active guidance mode only when signals from building fire alarm receivers are cross-verified with at least two distinct physical sensor media (e.g., VMB/gas cabinet leak/exhaust sensor interlocks, raceway thermal/multispectral smoke perception, acoustic panic, or movement trajectory analysis).
- * Dual Optical-Only Anchor Modes Architecture — To maintain operational capability under security regulations and camera prohibition rules, the optical guidance axis operates through two distinct modes:
-   * Mode A (Passive Photoluminescent Guidance Mode — Camera-Free Passive) — A purely passive path guidance method using photoluminescent materials physically decoupled from external power supplies and visual cameras. During total blackouts, evacuees can track evacuation paths via human vision alone. This mode can be deployed without regulatory conflict in high-security zones where cameras are strictly prohibited (e.g., semiconductor fabs, defense facilities, secure cleanrooms), serving as a last-line survival guide aligned with IMO SOLAS LLL photoluminescent standards.
-   * Mode B (Camera-Recognized Visual SLAM Drift Reset Extension Mode) — An enhanced optional mode applicable where camera usage is permitted. AR glasses, Autonomous Mobile Robots (AMRs), or mobile vision cameras capture geometric patterns on photoluminescent/optical panels, utilizing geometric pattern capture logic to reset IMU cumulative drift errors to zero in real time.
- * Subordinate Telecom Infrastructure & Offline-First Hierarchy — When 5G/6G small cells or Distributed Antenna Systems (DAS) are present in underground spaces, tunnels, fab sub-levels, or ship lower decks, the system may utilize them as auxiliary position fusion signals and management backhauls. However, because communication outages are assumed during disasters, the system maintains a strict offline-first hierarchy where fixed physical infrastructure (ISO 7010 signs, IMO SOLAS LLL, photoluminescent strips, fire hose cabinets, raceways, industrial fire/explosion-rated enclosures) serves as the primary anchor, while telecom infrastructure functions strictly as a secondary aid.
- * Form-Factor & Stimulus Agnostic Rule — The wearable receivers of this auxiliary guidance system are not limited to earphones, headphones, or bone-conduction devices. They encompass all human- and machine-contact forms, including smartwatches, wristbands, smart rings, AR/MR smart glasses, HUDs, patches, haptic vests, smart shoes/insoles, clothing-embedded modules, spacesuit (IVA/EVA) inner linings, life vest-integrated transducers, and robotic/drone vision modules. Directional tactile stimulation mechanisms are likewise not restricted to Eccentric Rotating Mass (ERM) or Linear Resonant Actuators (LRA), but include differential pressure, electro-tactile stimulation, micro-thermal variation, piezoelectric haptics, and any physical mechanism capable of conveying directional cues.
- * Master Architecture & Hardware Integration Structure — LAST-LIGHT's zero-point anchor calibration, 100ms self-healing mesh, and Tri-State isolation control adapt the bypass and local isolation logic of the master survival architecture (smart-system-multi-survival-architecture), fault-tolerant architecture (chiplet-apu-multi-system-survival-architecture), and internal strategy (ARCHITECTURE_STRATEGY.md) for emergency evacuation environments. The structural attachment mechanism for raceways, fire hose cabinets, marine bulkheads, and industrial enclosures represents an infrastructure implementation of CWP hardware mechanisms, while the 100ms isolation lifespan extension algorithm shares the survival control philosophy of MAX-LIFE-ICE-BELT.
- * Non-Limitation Principle of Embodiments — The L0/L1/L2 three-tier architecture, Structure First principle, Dual Optical Anchor Modes (Mode A/B), and statutory fire/explosion-rated enclosure zero-point anchoring represent core structural features. Specific embodiments, figures, numerical values, and materials in Appendix E serve illustrative purposes and do not limit the scope of the technology. Any variations or equivalents that incorporate these core structures—or alter, substitute, add, or combine L0 anchor materials, shapes, installation sites, or L1/L2 communication, optical, or haptic methods—aim to fall within the comprehensive scope of this prior art.
-0.3 Zero-Downtime and Non-Contact Principles
-This structural design prohibits physical or electrical modification of existing statutory fire, building, industrial, maritime, or space module infrastructure. In compliance with semiconductor manufacturing equipment environmental, health, and safety guidelines (SEMI S2/S8), the system operates via non-contact signal reception and independent relay monitoring without electrical tapping into VMBs or primary control circuits. To prevent system-wide failure if individual modules are damaged by impact or fire, the system prioritizes zero-downtime failover capabilities. Modules maintain an independent multi-mesh state without single points of failure (SPOF), allowing adjacent modules to assume computational tasks and local black box logging.
-0.4 Non-Proprietary Interoperability and Open Public Standard
-This design is not proprietary to specific optical cameras, vision sensors, microphone arrays, LiDAR systems, mobile devices, Co-Survival Bridges, AR glasses, smart rings, spacesuit HMDs/haptic transducers, or robotic vision frameworks. It operates as an open public standard that utilizes ISO 7010 series, IMO SOLAS LLL (electric and photoluminescent), fire hose indicator lights, fab/warehouse fire-rated enclosure markers, acoustic beacons, BLE Auracast transmitters, and raceway optical/acoustic/RF anchors as auxiliary reference points.
-0.5 Operational Priority Principle
-If processing overload occurs during an emergency, absolute anchor identification, position calibration processing, and core black box telemetry logging receive top resource priority. Non-essential tasks, such as high-definition visual restoration or secondary graphic rendering, are throttled or suspended to maintain continuous positioning functionality.
-0.6 Universal Scope of Application
-This structural design applies to smartphone evacuation applications, Co-Survival Bridges, AR/MR smart glasses Visual HUD navigation, smart rings, wristbands, wearable haptic receivers (clothing, vests, insoles), spacesuit (IVA/EVA) embedded haptic evacuation pads, passenger vessel and cruise ship enclosed cabin sections, IMO SOLAS LLL-linked receivers, logistics warehouse/semiconductor fab/cold chain cleanroom fire-rated and explosion-proof anchors, deep underground tunnels/evacuation cross-passages, distributed black box forensic modules, autonomous rescue robots (AMRs), orbital exploration robot recalibration modules, smart emergency lighting/acoustic anchors in buildings/ships/industrial sites/space bases, photoluminescent guidance line anchors, indoor/outdoor fire hose cabinet indicator lights, underground parking garage/spacecraft/marine raceway anchors, subterranean telecom small cell/DAS auxiliary integration modules, disaster rescue AR glasses, firefighter/astronaut/marine rescue team NVG/thermal imaging and bone-conduction equipment, and non-powered passive QR/ArUco/NFC tag-based WebAR and OS deep-link onboarding modules across all domains requiring visual, optical, auditory, vibrational, or tactile positioning assistance.
-0.7 Purpose of Publication and Disclaimer
-This document is published for defensive publication and prior art disclosure purposes. Operational capabilities, configurations, values, and calculations described herein represent target design baselines and illustrative figures; actual field values may vary depending on installation conditions. This system does not replace, alter, expand, or fulfill the legal obligations or performance specifications of statutory fire safety, industrial safety, or IMO marine safety installations, operating strictly as an auxiliary reference aid. Prior to commercial deployment or field installation, thorough simulation, empirical validation, and formal certification by relevant national and international safety standards organizations are recommended.
-0.8 Independent Prior Research Acknowledgment Clause
-This structural design was independently conceived and formulated by the author. However, the possibility that similar concepts have been independently derived by other researchers, inventors, or institutions is acknowledged. The purpose of this technical specification is not to assert exclusive ownership, but to record intuitive concepts and system directions as public prior art, mitigating private monopolization by specific entities and permitting open reference for technological development and life-safety applications.
-1. Revision History
- * v1.0 (2026-07-30) — Initial visual anchoring concept formulation.
- * v2.0–v3.0 (2026-08-30) — Full-stack architecture design integration, including dual-wavelength raceway IR/visible light, lightweight AI models, and self-healing multi-mesh failover structures.
- * v3.1–v3.6 (2026-08-30) — Incorporation of Independent Prior Research Clause (0.8), AI Transparency Disclosure (Appendix C), Emergency Power Scope (3.C), Sensor Fusion Standards (0.2), Fire Hose Cabinet Anchors (3.A), and Directional Acoustic/Bone Conduction Specs (3.A, 3.B).
- * v3.7 (2026-08-31) — Integration of Personal Wearable Interoperability (3.E), Idle Isolation & Emergency Onboarding (3.F), and Multisensory Anchor Evacuation Guidance Specifications (3.G).
- * v3.8 (2026-08-31) — Terminology update to "Co-Survival Haptic Receiver" for noise environments above 100 dB; integration of Public Infrastructure Deployment and Standard Haptic Compass Protocols (3.E).
- * v3.9 (2026-09-01) — Integration of Fire Hose Cabinet Heat-Resistant Local Black Box Telemetry (3.H) and log-restoration-based self-evolving AI training mechanisms.
- * v4.0 (2026-09-06) — Cross-reference patches applied for master chiplet survival architecture (chiplet-apu v2.6.1), strategy (ARCHITECTURE_STRATEGY), marine armor (MAX-LIFE-ICE-BELT v1.6), and CWP hardware mechanisms.
- * v4.1 (2026-09-06) — Integration of space base orbital modules, zero-g smoke dispersion evacuation, IVA/EVA spacesuit haptic compass linking, wearable form-factors, and directional stimulus abstraction rules.
- * v4.2 (2026-09-07) — Name refined to "Co-Survival Bridge"; two-tier subtitle structure; clarification of 3.D communication paths; alignment of 3.E/3.F privacy specs; consolidation of master hierarchy and sensor fusion closure.
- * v4.3–v4.7 (2026-09-09) — Multi-device expansion, SLAM timescale refinement, subterranean telecom (small cell/DAS) auxiliary integration, offline-first hierarchy, fire-rated infrastructure non-obviousness logic, and regulatory justification separation via cross-references.
- * v4.8 (2026-09-09) — Adoption of "Structure First" principle and cross-reference declarations. Appendix C AI notice refined to abstract AI models without specific corporate names.
- * v4.9 (2026-09-14) — Inclusion of marine vessels and deep tunnels within anchor scope (IMO SOLAS LLL, bulkheads, Muster Stations).
- * v5.0 (2026-09-14) — Ecosystem attribution and master architecture synchronization patch.
- * v5.1 (2026-09-14) — Zenodo DOI update and deundeuni handle correction.
- * v5.2 (2026-09-14) — Standardized representative repository handle to [github.com/deundeuni/soma-moa](https://github.com/deundeuni/soma-moa) in Appendix A for source consistency.
- * v5.3 (2026-09-22) — Expansion of L0 Anchor scope, Dual Optical Anchor Modes, Non-Limitation Principle of Embodiments, and safety certification recommendations.
- * v5.4 (2026-09-22) — Precision terminology update (EPB replaced with VMB; separation of HACCP sanitary standards from explosion-proof certifications).
- * v5.5 (2026-09-22) — Patch incorporating VMB secondary containment/negative exhaust/sump leak sensor interlocks, false alarm cross-verification pipelines, and SEMI S2/S8 non-invasive safety standards compliance.
-2. 3-Layer Applied Architecture
-[L2] Auxiliary Guidance and Specialized UI Layer
- * For Evacuees / Crew / Passenger Vessel Passengers / Fab & Warehouse Workers — Green visible light, photoluminescent strip emission, spatial audio, AR/MR glasses Visual HUD 3D guidelines, Co-Survival Bridge (earphones, wristbands, rings, etc.), smart rings, personal smartwatches/bands, haptic vests/insoles, spacesuit-integrated and marine life vest-linked left/right directional guidance, WebAR/voice evacuation assistance.
- * For Firefighters / Rescue Personnel / EVA Crew / Marine Rescue / Fab Emergency Response Teams (ERT) — IR/NVG/thermal imaging high-contrast visual cues, specialized tactile/directional acoustic guidance for rescuers, backend telemetry transmission.
- * For Autonomous Robotics / AMRs / Drones — Visual SLAM/LiDAR zero-point location error reset fabric, survivor tracking telemetry.
- * For Control and Forensics — Post-disaster black box log recovery and building/vessel/fab/warehouse/orbital module bottleneck analysis reports.
-[L1] Perception and Estimation Fabric Layer
- * Visible/IR multispectral sensing, photoluminescent geometric pattern capture, AR vision, microphone array Direction of Arrival (DOA) feature extraction, BLE Auracast/UWB reception, 5G/6G small cell and DAS signal fusion.
- * Correction and estimation algorithms (Kalman filtering, acoustic Doppler/phase-difference probability models, Visual SLAM Drift Reset), IMU/gyroscope/LiDAR sensor fusion engine.
- * AI state estimator, false alarm discrimination & heterogeneous multi-sensor cross-verification controller, heterogeneous device graceful fallback controller, distributed self-healing mesh communication unit, reliability validator, ring-buffer black box local logging unit.
-[L0] Infrastructure and Optical/Acoustic/RF Layer
- * ISO 7010 exit signs, IMO SOLAS LLL (electric/photoluminescent), indoor fire hose/alarm/space module/ship cabin/logistics/fab fire-rated/explosion-proof enclosure internal/external indicator lights.
- * Fire hose cabinets, marine bulkhead chambers, logistics fire shutter cabinets, fab VMBs / chemical distribution boxes (with secondary containment, negative pressure exhaust, and sump leak sensors), gas cabinets, explosion-proof enclosures complying with HACCP sanitary standards, orbital module fire-rated internal chambers housing heat-resistant non-volatile flash memory (black box modules).
- * Directional speakers/acoustic anchors, subterranean parking garage/deep tunnel/ship corridor/fab rack lower level/spacecraft raceway multi-wavelength lighting, photoluminescent, acoustic, BLE Auracast/UWB modules.
- * Subterranean/tunnel/fab sub-level 5G/6G small cell and Distributed Antenna System (DAS) auxiliary RF receiving/backhaul modules.
- * Passive non-powered QR/ArUco/NFC tags, emergency power-linked / non-powered photoluminescent emitters, non-contact optical/acoustic/RF sensing receivers.
-2.5 AI Governance and Model Architecture
- * Abstract Comprehensive AI Engine Definition — The AI processing unit is not restricted to specific model sizes, neural network topologies, parameter counts, or chipset form factors. It encompasses edge AI on-device processing, lightweight models, server/cloud/satellite-linked Large AI Models (LLM/VLM/Audio AI), multispectral vision and audio signal processing networks (CNN/Transformer/Audio Spectrogram Transformer), and hybrid deployment configurations.
- * Lightweight Edge Model (sLLM / Small Vision-Audio Model / Edge AI) Rationale — Disasters involve power blackouts, server destruction, and severe network disruption. Moreover, power and computational resources on AR glasses, Co-Survival Bridges, smart rings, smartwatches, marine life vest receivers, and spacesuit modules are limited. Ultra-low-power, ultra-low-latency on-device lightweight models (sLLM, Small Vision/Audio Models, NPU waveform AI engines) serve as a primary implementation approach.
- * Core AI Estimation and Governance Roles:
-   * Multispectral Vision, AR Vision, and Spatial Audio/RF Perception — Asynchronously parses ISO pictograms, SOLAS LLL lighting, photoluminescent geometric patterns, fire hose indicators, raceway IR emitters, acoustic anchors, BLE Auracast/UWB, and small cell signals through smoke, noise, glare, vessel listing, and zero-g smoke dispersion.
-   * False Alarm Cross-Verification and Confidence Assessment — Cross-references fire alarm signals, VMB leak sensors, and raceway thermal data to identify glitches, dynamically controlling confidence scores for primary guidance paths.
-   * Dynamic Error Correction and SLAM Reset — Combines IMU/gyroscope cumulative drift errors with ANCHOR/passive tag/photoluminescent geometric specs using Kalman filters and Visual SLAM algorithms to calibrate positional coordinates to zero in real time.
-   * Graceful Fallback Control — Dynamically switches output priorities between AR HUD visual guidance, tactile haptics, and spatial audio based on smoke density, noise levels, and visual occlusion, suppressing hallucinated guidance if perception confidence drops.
-   * Black Box Log Feedback — Feeds restored black box log datasets back into AI training pipelines to analyze human/crew/passenger/worker behavior patterns and facility bottlenecks, refining real-time route recalculation algorithms.
-3. Core System Blocks and Operational Mechanisms
-A. ANCHOR Signage, Fire Hose/Control Cabinets, Bulkheads, Industrial Fire/Explosion-Rated Enclosures, Acoustic/RF Anchors, and Raceway Detection (Infrastructure Domain)
- * Treats ISO 7010 exit signs, IMO SOLAS LLL (electric/photoluminescent), fire hose/control cabinet/logistics fire shutter cabinet/fab gas cabinet/VMB & chemical distribution boxes/explosion-proof enclosures complying with HACCP sanitary standards as absolute reference points (ANCHORs).
- * Fire hose cabinets, marine bulkhead chambers, VMBs, chemical distribution boxes, and industrial fire/explosion-rated enclosures operate as fixed physical anchors due to their statutory fire resistance and explosion protection standards (e.g., NFPC, IMO SOLAS, KCs). The internal secondary containment, negative pressure exhaust, double-walled piping, and sump leak sensor interlocks of VMBs provide physical and chemical survivability justification for L0 anchoring.
- * Receives spatial audio, frequency-modulated signals, BLE/UWB emergency broadcasts, and photoluminescent emissions in zero-visibility, tilted, or zero-g environments to perform multisensory zero-point position calibration.
- * Controls multi-channel reception of NVG/thermal imaging visual cues, tactile vibration signals, and specialized frequency data for firefighters, rescue personnel, marine rescue teams, fab ERT members, and astronauts.
- * Indirectly perceives light, photoluminescent geometry, acoustics, and RF features without requiring physical or electrical modifications to existing infrastructure.
- * Route alignment via standard luminaires, industrial raceways, and SOLAS LLL — Raceway anchoring targets exposed light fixtures, IMO SOLAS LLL strips, and photoluminescent lines. Raceway paths closely match primary evacuation routes.
- * High line-of-sight visibility and crowd occlusion mitigation — Overhead, wall-mounted, and low-location (LLL) placements reduce visual line-of-sight blockages caused by surrounding crowds.
-B. ESTIMATION Calibration/Estimation and Multisensory Auxiliary Guidance Generation (Auxiliary Device Domain)
- * Feature Extraction — Separates and extracts image corner points, photoluminescent geometric patterns, AR vision frames, microphone array phase differences / arrival delays / Direction of Arrival (DOA), and BLE/UWB/small cell RF signal strengths.
- * Calibration and Estimation Algorithms:
-   * Inputs — Relative motion vectors from gyroscopes, IMUs, microphone arrays, acoustic sensors, RF receivers, LiDAR, AR cameras, and composite sensors, alongside observed values from ANCHORs, passive tags, photoluminescent patterns, and auxiliary telecom signals.
-   * Processing — Combines AI state estimation, Extended Kalman Filtering (EKF), Visual SLAM drift reset (in Mode B), and acoustic triangulation/Doppler correction to recalibrate cumulative IMU/gyroscope error matrices to zero in real time.
-   * Outputs — 3D spatial coordinates, AR HUD 3D guidelines, and visual/auditory/tactile directional cues (including intuitive left/right haptic compass pulses).
- * Confidence Control — Automatically suspends or suppresses guidance output if perception confidence falls below a set threshold or if a signal is identified as a false alarm.
-C. Emergency Power and Operational Duration
- * Mandatory Emergency Power Linking — Must interface with building or marine vessel emergency generators, fab emergency power, or space module emergency power systems, or incorporate independent auxiliary power units (batteries, supercapacitors, energy harvesting).
- * Non-Powered Photoluminescent Layer (Last Line of Defense) — If all emergency power and auxiliary batteries are depleted during a blackout, Mode A (passive photoluminescent guidance) maintains emission without external electrical power (0% external power requirement), providing visual reference cues.
- * Power Storage Agnostic — Encompasses lithium-based batteries, LFP, solid-state, supercapacitors, energy harvesting systems, and hybrid energy storage.
- * Operational Duration Ranges — Covers initial golden-hour evacuation (under 2 hours), minimum rescue window operations (2–4 hours), and extended operation thresholds (6, 12, 24 hours or longer).
-D. Self-Healing Multi-Mesh and Zero-Downtime Failover
- * Independent Multi-Mesh — Forms P2P and N-Mesh multi-connection fabrics between modules without reliance on single communication lines.
- * Dynamic Self-Healing — Isolates module faults within 100 ms of destruction, autonomously rerouting communication, computation, acoustic, and RF signals through neighboring active modules.
- * Zero-Downtime Control Handover — Calibration, emission, transmission, guidance, and black box logging functions of damaged modules transfer seamlessly to adjacent operating modules.
-E. Co-Survival Bridge — Sensory Isolation Mitigation, Public Deployment, Anti-Theft Design, Heterogeneous Multi-Device Interoperability, and Graceful Fallback
-When dense smoke obscures vision and siren noise exceeds 100 dB, voice prompts and visual displays lose effectiveness. Under panic conditions, tactile feedback delivered through skin and bone provides direct directional orientation.
-Co-Survival Bridges cover a range of form factors, including earphones, wristbands, smart rings, AR glasses, patches, haptic vests, smart insoles, life vest-embedded transducers, smart clothing, and spacesuit (IVA/EVA) inner layers. The name "Co-Survival Bridge" reflects its role in reconnecting isolated individuals to a survival network.
-To deter theft and non-emergency use, non-essential functions (such as music playback) are omitted. The device functions as a single-purpose emergency auxiliary tool deployed in public infrastructure, ship cabins, and industrial facilities.
- * Standard Haptic Compass Protocol:
-   * Turn Left — Double tap on left temple / wristband / ring / watch / life vest / spacesuit transducer (100ms ON / 100ms OFF / 100ms ON).
-   * Turn Right — Double tap on right temple / wristband / ring / watch / life vest / spacesuit transducer (100ms ON / 100ms OFF / 100ms ON).
-   * Move Forward — Simultaneous sustained pulse on both sides (400ms pulse).
-   * Stop / Hazard — Simultaneous extended vibration on both sides (1200ms long vibration).
-   * Anchor Reached / Calibrated — Three rapid taps on both sides (50ms ON / 50ms OFF, 3 cycles).
- * Heterogeneous Multi-Device Interoperability and Graceful Fallback (BYOD) — The system provides software interoperability with personal and rescue equipment (e.g., AR/MR smart glasses, smart rings, smartwatches/bands, haptic vests/patches/insoles, TWS hearables, AMRs). If dense smoke blocks AR glasses cameras or high ambient noise impairs hearing, the L1 processing fabric transitions output control within 0.1 seconds from visual HUD guidance to haptic compass vibrations and spatial audio, maintaining continuous guidance.
- * Personal Device Privacy Isolation and Activation Mechanism — When connected to personal smartwatches, smart rings, or AR glasses, background scanning and data collection remain inactive during normal operations for privacy and battery conservation. Upon detecting an emergency broadcast or signal pulse from an L0 Anchor, background functionality activates to deliver directional haptic guidance.
-   Equipped with directional clarity, wearers can guide nearby disoriented evacuees without complex verbal communication, supporting localized emergency response networks.
-F. Rapid Onboarding, Non-Contact QR/NFC Quick Release, and Visual SLAM Rapid Drift Reset
- * Idle Isolation and Privacy Protection — During normal operations, L0 Anchor Auracast/RF features remain in an idle state (transmitting low-power pulses under 0.1s per minute), isolating connections to personal devices to prevent position tracking, data harvesting, and battery drain.
- * Emergency Activation and 3-Second Onboarding — Upon emergency detection, RF broadcasting activates. Scanning passive non-powered QR/ArUco tags or tapping NFC tags on exit signs, fire hose cabinets, industrial enclosures, ship bulkheads, or space modules executes WebAR or OS deep-links (last-light://{anchor_id}?b={broadcast_id}&k={public_temp_key}) without app installation, connecting within 3 seconds.
- * Visual SLAM Zero-Point Calibration (Rapid Drift Reset — Mode B) — In camera-permitted zones, when AR glasses, smartphones, or robotic vision systems capture passive QR/ArUco tags or photoluminescent geometric patterns from an L0 Anchor, cumulative spatial IMU drift errors are reset to zero within 100 ms or by the subsequent processing frame.
- * Automated Search in Visual Occlusion or Security Zones — If smoke or camera restrictions prevent optical tag scanning, the system defaults to Mode A (passive photoluminescent visual guidance) while automatically connecting to the strongest RF broadcast signals from adjacent anchors.
- * Tag Attachment Standard — Non-powered passive tags containing no personal data are attached without obscuring statutory signage or IMO SOLAS markings.
-G. Multisensory Anchor-Based Evacuation Guidance and Topological Connection Specification
- * Environmental Context — Designed for subterranean parking garages, underground arcades, deep tunnels, logistics warehouses, semiconductor fabs, cold storage facilities, cruise/passenger ship cabin sections, and orbital space modules where smoke and blackouts impair vision.
- * VMB – Raceway – ISO 7010 Topological Evacuation Connection Structure — When VMB/chemical enclosure internal sensors detect a hazard origin, the system isolates the hazard zone, projects a bypass route along the raceway grid (the spatial backbone), and guides evacuees to the final safe destination marked by ISO 7010 emergency exit pictograms.
- * Co-Survival Evacuation Leadership — Evacuees equipped with Co-Survival Bridges, AR glasses, smart rings, or linked smartwatches receive haptic vibrations and visual HUD data, allowing them to assist nearby individuals toward exit paths.
- * Multi-Anchor Composite Visualization — Wall-mounted green ISO 7010 exit signs, IMO SOLAS LLL strips, and red fire hose/industrial enclosure lights serve as visual reference points, while ceiling, wall, and rack raceway acoustic and RF modules project synchronized wireless signals into the space.
-H. Distributed Fire-Rated/Explosion-Proof Local Black Box Telemetry
- * Physical Survivability via Protective Enclosures — L0 black box memory units derive physical protection from host structures, such as fire hose cabinets (NFPC compliant), marine bulkheads (IMO SOLAS compliant), logistics fire shutter cabinets, fab gas cabinets/VMBs & chemical distribution boxes (with secondary containment and negative pressure exhaust), explosion-proof enclosures complying with HACCP sanitary standards, and space module chambers.
- * Distributed Local Black Box Structure — L0 Anchors house heat-resistant non-volatile flash memory within these protective chambers, maintaining a ring buffer that records recent trajectory logs (1–2 hours), zero-point calibration events, RF logs, and module failover timelines independently of external network connectivity.
- * Forensics and Liability Resolution — Following severe fires, structural collapse, explosions, or vessel sinking, surviving black box chips recovered from fire hose cabinets or protected chambers provide objective records for trajectory reconstruction and performance evaluation.
- * Data Feedback and Evolving Optimization — Recovered black box logs feed into AI training pipelines to evaluate movement bottlenecks and smoke propagation, informing real-time route optimization models.
- * Master Sensor Fusion Closure — All individual sensor and control blocks detailed in Section 3—including optical elements, photoluminescent patterns, vision sensors, AR vision, microphone arrays, IMUs, gyroscopes, BLE Auracast, UWB, small cells/DAS, haptics, and heat-resistant black box memory—operate as subordinate extensions of the Master Sensor Fusion Framework defined in Section 0.2. System configurations combining these elements around the zero-point calibration mechanism fall within the comprehensive scope of this prior art.
-4. Dynamic Resource Management and Defensive Safety Control
- * Dynamic Rate Limiter — Dynamically adjusts visual frame rates, audio packet frequencies, and RF sampling intervals to prevent processor overload during peak events.
- * Random Sampling Scan — Asynchronously samples acoustic, optical, and RF inputs into isolated buffers to mitigate interference from glare, heavy smoke, high noise, or spoofed packets.
- * False Alarm Cross-Verification — Does not immediately alter guidance outputs upon receiving a single fire alarm detector signal; requires at least two distinct sensor media signals (from VMB leak sensors, raceway thermal imaging, or acoustic packets) within 0.1 to 1 second to confirm a genuine disaster, preventing crowd panic from false alarms.
- * Relocation Interception — Instantly halts position calibration procedures and guidance outputs if fraudulent lighting, manipulated audio, false alarm packets, or unauthorized RF packets are detected.
- * Thermal/Power Suppressor (T-Reg Suppressor) — Hardware-throttles computational frequency if system temperature or power draw exceeds safe operating thresholds.
- * Tri-State Physical and Logical Isolation — Automatically transitions control lines to a High-Impedance (High-Z) state within 0.1 seconds (100ms) upon detecting internal software or circuit faults, preventing electrical or logical interference with statutory safety systems. (Note: The 0.1s / 100ms response time of this network-layer Tri-State isolation is a subsystem control specification, distinct from the 0.1ms / 100µs emergency actuator stop speed of the master chiplet-apu controller).
-5. Standard Utilization and Legal Boundaries
- * Standard Compliance — References ISO 7010, IMO SOLAS, ISO 15370 (Low Location Lighting), Bluetooth SIG, UWB, 3GPP small cell specifications, National Fire Code (NFPC), KCs explosion-proof standards, SEMI S2/S8 (Semiconductor Equipment EHS Guideline), HACCP sanitary standards, and infrared/visible light/acoustic standards as public reference examples.
- * Non-Replacement of Statutory Equipment — Functions strictly as an auxiliary reference system. It does not replace, alter, or satisfy the statutory obligations, performance requirements, or installation criteria of primary emergency exit lighting, IMO LLL, emergency alarms, fire hose indicators, or statutory safety equipment mandated by fire, building, industrial safety, or maritime law.
- * Safety Margin and Physical Limitations — Auxiliary functionality may experience delay or disruption under extreme smoke, intense noise, explosions, structural submergence, or severe RF shielding. Final evacuation decisions remain the responsibility of human rescue personnel and primary statutory safety equipment.
-6. Future Applications and Industrial Expansion Scope
- * Smart Underground Parking, Deep Tunnels, and Industrial Raceways — Deploying dual-wavelength IR/visible light, directional audio, and BLE Auracast/UWB anchors along raceways supports autonomous parking, inspection, and logistics robotics during normal operations, while providing auxiliary evacuation guidance during emergencies.
- * Logistics Automated Warehouses, Semiconductor Fabs, and Cold Chain Fire/Explosion-Rated Anchors — Integrating fire shutter control boxes, sprinkler pump rooms, rack fire-rated bases, special gas cabinets, chemical showers, VMBs (Valve Manifold Boxes), chemical distribution boxes, and explosion-proof enclosures complying with HACCP sanitary standards as L0 Anchors assists personnel and Emergency Response Teams (ERTs) during gas leaks, chemical fires, or blackouts. Anti-frosting covers and passive photoluminescent-haptic fallback modes are provided for extreme low-temperature cold chain environments.
- * Fire Alarm System and Sensor Cross-Verification Linking — Cross-verifying fire alarm receiver signals with VMB leak sensors and raceway smoke perception data automatically filters out false alarm glitches, activating the evacuation guidance network only during actual emergencies.
- * Passive Photoluminescent Expansion in Optical Anchor Modes — Expanding optical anchor modes to incorporate power-independent photoluminescent markers aligns with IMO SOLAS LLL standards for unpowered human visual guidance without requiring visual camera input.
- * Subterranean/Tunnel/Fab Telecom Infrastructure Backhaul Integration — Interfacing with 5G/6G small cells and Distributed Antenna Systems (DAS) in subterranean parking, tunnels, and fab sub-levels provides positioning fusion and telemetry backhaul, while maintaining offline zero-downtime operation during network failures.
- * Passenger Ships, Cruise Lines, and Maritime Muster Stations — Utilizing cabin corridors, marine bulkheads, and Muster Station signs as L0 zero-point anchors delivers haptic guidance via life vest receivers or smart rings during ship blackouts or severe listing.
- * Fire Hose Cabinets, Industrial Enclosures, and Space Module 3D Anchors — Utilizing fire hose cabinet surfaces, industrial fire/explosion-rated enclosures, marine bulkheads, and space base module chambers as spatial recalibration points maintains tactile guidance paths under total visual obstruction.
- * AR Glasses Visual HUD and Smart Ring Tactile Evacuation Guidance — Projecting 3D evacuation guidelines on AR/MR glasses HUDs while providing automatic fallback to smart ring finger-tactile compasses and photoluminescent guidance lines if smoke obstructs vision or camera use is restricted.
- * Pressurized Space Base Modules and IVA/EVA Spacesuits — Providing auxiliary navigation to airlocks or escape modules via spacesuit haptic compasses and NVG HMDs during zero-g space station fires or depressurization events.
- * Autonomous Logistics (AMR) and Rescue Robotics Navigation — Enabling automated Visual SLAM error reset and survivor tracking for rescue robots operating in underground sites, warehouses, ship interiors, or space modules during wireless communication outages using raceway and fire/explosion-rated anchors.
-7. Practical Protection and Legal Framework
- * Original Language Authority Rule — The legal and technical interpretation of this specification is governed exclusively by the Korean original text (README.ko.md). English and other language translations serve solely as secondary reference materials.
- * Comprehensive Scope — Applies broad prior art protection across disclosed concepts, including ANCHORs, ESTIMATION, Co-Survival Bridges (encompassing smart rings, vests, insoles, life vest receivers, and related form factors), AR Glasses Visual HUDs, IMO SOLAS LLL integration, dual optical modes (Mode A/B), deep tunnel and logistics/fab/cold chain fire/explosion-rated anchors, VMB secondary containment and leak sensor interlock integration, fire alarm false alarm cross-verification pipelines, heterogeneous multi-device integration with graceful fallback, WebAR/NFC quick release, Visual SLAM rapid drift reset, Auracast/UWB haptic compasses, subterranean small cell/DAS auxiliary integration, fire hose cabinet and bulkhead physical anchoring, Tri-State isolation, T-Reg Suppressors, distributed black box logging, spacesuit haptic guidance, and self-evolving AI models. Protection is not limited to specific numerical values, materials, or installation arrangements, but encompasses all implementations utilizing Structure First L0 anchoring.
- * Separation of Commercialization Content — This technical white paper contains open-source and prior art disclosures. Commercial business models, pricing, and proprietary execution plans are managed in separate technical documentation.
- * Defensive Publication and DPL License — Published as prior art to establish grounds for rejection against third-party proprietary patent applications. Under the Defensive Patent License (DPL v1.0), any entity initiating patent infringement litigation against the author or ecosystem participants regarding this technology forfeits its license rights.
- * Prior Use Rights and Trade Secret Bifurcation — Prior use rights are maintained under Article 103 of the Korean Patent Act and 35 U.S.C. §273. Specific feature extraction weights, camera-based SLAM reset parameters, and detailed neural network architectures are maintained as trade secrets.
- * Recommendation for Patent Attorney Review — Formal review by patent counsel regarding DPL licensing, prior use rights assertions, and utility model filings is recommended. Specific claim wording may be refined during formal patent office filings.
-8. Sources and Document Authority Standard
- * Master Survival Architecture — GitHub: deundeuni / smart-system-multi-survival-architecture
- * Master Fault-Tolerant Survival Architecture — GitHub: deundeuni / chiplet-apu-multi-system-survival-architecture (Zenodo DOI: 10.5281/zenodo.22374987 / Embedded ARCHITECTURE_STRATEGY.md)
- * Related Marine Armor — GitHub: deundeuni / MAX-LIFE-ICE-BELT (Zenodo DOI: 10.5281/zenodo.22373686)
- * Defensive Publication White Paper (LAST-LIGHT v5.5) — GitHub: deundeuni / LAST-LIGHT (Zenodo DOI: 10.5281/zenodo.22373189)
- * Related CWP Hardware Repositories:
-   * GitHub: deundeuni / CWP-Entry (Zenodo DOI: 10.5281/zenodo.22683234)
-   * GitHub: deundeuni / CWP-Rolling-Self-Align-Battery-Swap-System (Zenodo DOI: 10.5281/zenodo.22373704)
-   * GitHub: deundeuni / CWP-Battery-Swap (Zenodo DOI: 10.5281/zenodo.22373538)
-   * GitHub: deundeuni / CWP-Clamping-Battery-Swap-System (Zenodo DOI: 10.5281/zenodo.22373722)
- * Master Gateway and Brand — deundeuni / soma-moa (Zenodo DOI: 10.5281/zenodo.22435773) | somamoa.ai.kr (Canonical Gateway)
- * International Standards and Specifications — ISO 7010, ISO 16069, IMO SOLAS, ISO 15370 (Low Location Lighting), Bluetooth SIG Auracast / LE Audio Specifications, UWB Standards, 3GPP Small Cell Specifications, Korean Fire Code (NFPC), KCs Explosion-Proof Standards, SEMI S2/S8 (Semiconductor Equipment EHS Guideline), HACCP Food Safety Management Sanitary Standards, Marine Safety Act.
- * Legal Precedents and Guidelines — Korean Patent Act Article 103 (Prior Use Rights), US Patent Code 35 U.S.C. §273.
- * Document Originality Declaration — This document is declared to possess complete technical self-containment as an independent white paper.
-Appendix A: Inventor Information
- * System Architect and Sole Conceiver: deundeuni
- * Representative Repository: [github.com/deundeuni/soma-moa](https://github.com/deundeuni/soma-moa)
- * Applied License: CC BY 4.0 (Attribution Required) + DPL v1.0
-Appendix B: Revision History Reference
- * Refer to Section 1 of the main document body.
-Appendix C: AI Assistance Disclosure and Tool Rules
- * AI Assistance Disclosure — All technical architectures, haptic protocols, mathematical formulas, and legal frameworks disclosed in this white paper originate from the independent intellectual work and domain insight of the creator (deundeuni). Various artificial intelligence models (AI models) were utilized strictly under the direct direction of the creator as auxiliary text editing tools for drafting, sentence refinement, translation, and document formatting. AI models are defined as abstract tools to mitigate potential corporate attribution claims, and did not directly contribute to the conception of the technical ideas or inventive steps.
- * Intellectual Ownership Statement — All core technical architectures, haptic compass algorithms, circuit control logic, and legal protective structures in this white paper belong exclusively to the sole human inventor (deundeuni).
-Appendix D: Legal Disclaimer and Limitation of Liability
- * Non-Replacement of Statutory Equipment Notice — The technologies, software, QR/ArUco/NFC tags, BLE Auracast/UWB fabrics, spatial audio anchors, subterranean/industrial telecom integration modules, IMO SOLAS LLL integration modules, non-powered photoluminescent guidance lines, Co-Survival Bridges (including smart rings, vests, insoles, life vest receivers, and related form factors), AR Glasses Visual HUDs, smartwatch integration software, and distributed local black boxes disclosed in this specification (LAST-LIGHT v5.5) do not replace or fulfill the statutory, physical, or functional obligations of legally mandated emergency exit lights, IMO LLL, emergency alarms, or fire safety equipment under fire safety, building, industrial safety, or maritime laws, serving exclusively as auxiliary reference aids.
- * Limitation of Liability Statement — The author (deundeuni / soma-moa) and open-source contributors assume no civil or criminal liability for evacuation delays, communication failures, sensory perception errors, data loss, or personal/property damages arising from the application or implementation of this document, code, or visual materials. Full responsibility for safety management and evacuation remains with site safety managers, vessel captains/safety officers, evacuees, and statutory equipment operators.
- * Intellectual Property and Trademark Disclaimer — Technical standards cited herein (such as Bluetooth SIG, ISO, IMO, 3GPP) serve illustrative purposes as public reference examples and carry no intent to infringe third-party trademark rights. All technical descriptions are to be interpreted as generic engineering concepts unattached to specific commercial brands.
+> **Correction & Retraction Notice**
+> This document has been prepared to fully correct the contents of the previously published technical white paper v5.5 (Zenodo DOI: 10.5281/zenodo.22373189, etc.) and retract certain claims.
+> All claims regarding independent technical creation, defensive prior art specifications, intellectual property (IP) ownership, inventorship, non-obviousness, broad protective scope declarations, DPL licensing, and unverified numerical operation guarantees included in the previously published version are hereby retracted.
+> The previously published version v5.5 and associated records remain preserved as historical public records, and this revised edition supersedes them. For technical judgment and interpretation, the cited original literature and national/international standards take ultimate precedence over this document.
+
+* **Data Compiler:** deundeuni (Repository: soma-moa/LAST-LIGHT)
+* **Date of Revision:** 2026-10-04
+* **License:** CC BY 4.0
+* **Original Language Notice:** This document was originally authored in Korean. In case of discrepancies between translated versions and the Korean original, the Korean text serves as the reference, but the cited original literature and relevant standards take ultimate precedence for technical content and interpretation.
+
+---
+
+### Safety and Uncertified Equipment Notice
+
+This document is merely a compilation that surveys and organizes existing literature published in academic papers, patents, and national/international standards.
+1. **Uncertified Equipment:** The structures, algorithms, and system configurations mentioned in this document are not officially certified safety equipment and have not undergone engineering or empirical verification.
+2. **Non-Replacement of Statutory Equipment:** This material does not replace the legal or functional requirements of statutory emergency exit signs, IMO Low-Location Lighting (LLL), emergency public address systems, or fire hydrant location lights mandated by fire safety, building, ship safety, or industrial safety regulations.
+3. **Prohibition of Use:** The descriptions in this document must not be relied upon to construct actual emergency evacuation guidance systems or to serve as a basis for evacuation decisions during actual disaster scenarios.
+
+---
+
+## 1. Revision History
+
+* **2026-10-04:** Added Correction & Retraction Notice, converted to a literature survey and structure organization document, and incorporated review feedback.
+
+---
+
+## 2. Overview and Analytical Framework
+
+This document categorizes and organizes existing technologies proposed to assist in evacuation and location estimation in sensory-deprived environments caused by fire, power outages, and smoke propagation. The three-layer categorization presented herein (Infrastructure Layer, Perception & Estimation Layer, Auxiliary Guidance Layer) serves solely as an analytical framework adopted by the compiler to systematically analyze related literature and does not claim any systemic novelty or structural originality.
+
+---
+
+## 3. Prior Literature Survey by Component
+
+### (A) Reference Point Calibration for Position Drift
+Various techniques utilizing external reference points to mitigate error accumulation (drift) in Pedestrian Dead Reckoning (PDR) have been investigated in the literature.
+* **Marker and RFID Calibration:** Technologies employing vision-based fiducial markers or RFID tags to reset PDR positions as pedestrians pass designated locations have been studied.
+* **2D Barcode Calibration:** Methods combining 2D barcode patterns with PDR to correct indoor navigation positioning errors have been proposed.
+* **Landmark and Map Matching:** Approaches utilizing fixed architectural structures (landmarks) such as doors and staircases to correct errors, or applying sensor fusion (Extended Kalman Filters, etc.) to combine WiFi/BLE signals with landmark data, have been presented.
+* **Visual-Inertial SLAM Drift Correction:** Research has been conducted on correcting position drift in Visual-Inertial SLAM by leveraging vanishing point features in indoor environments.
+
+### (B) Wearable Tactile (Haptic) Directional Guidance
+Various means of providing directional information through vibrotactile stimuli applied to the skin or bones in environments with degraded visual and auditory feedback have been proposed.
+* **Firefighter Evacuation Assistance:** Vibrotactile waist belts, helmet-integrated directional vibration devices, and wrist-worn haptic devices (SearchSense) have been researched to aid firefighters in situational awareness and egress through dense smoke.
+* **Ship Evacuation Assistance:** Smart lifejackets with embedded vibration motors and beacon-linked smartbands have been proposed for passenger evacuation from large ships.
+* **Space Environment Guidance:** NASA technical memoranda have addressed tactile displays (Tactor Locator System) for astronaut situational awareness during EVA, while ISS tactile vest literature has explored applications including emergency evacuation guidance.
+
+### (C) Low-Location Lighting and Photoluminescent Lines
+Guidance systems installed near floor level to counter upper-level smoke accumulation are established under international standards and regulations.
+* **International Standards:** ISO 15370 and IMO Resolution A.752(18) specify installation and performance criteria for Low-Location Lighting (LLL) on passenger ships.
+* **Installation and Luminescence:** The requirement to install guidance within 300 mm of the floor is described in SOLAS and ISO 15370 related materials, and both electrical and photoluminescent materials are accepted. ISO 15370 references ISO 16069 for graphical symbols of escape route signs, whereas ISO 16069 itself is not intended for ships falling under IMO regulations and does not address tactile or audible components.
+
+### (D) Utilization of Emergency Lights and Exit Signs as Location Anchors
+Research and patents exist regarding the integration of wireless communication functions into existing emergency exit signs and emergency lighting to serve as positional reference points.
+* **Patents on Wireless Beacon Integration:** Technologies incorporating BLE or WiFi modules inside emergency lights and exit signs to assist indoor positioning have been published (e.g., US 11127266, US 12156316).
+* **Visible Light Positioning:** Studies on applying LED Visible Light Positioning (VLP) technology for indoor pedestrian localization have been reported in academic journals.
+* **Beacon-Integrated Exit Signs:** Research has been conducted on combining BLE beacons with emergency exit signs to serve as location reference points for smartphone evacuation applications.
+
+### (E) IoT Monitoring of Fire Safety Equipment
+Technologies for remotely monitoring the status of existing fire safety equipment, including extinguishers, fire hydrants, and fire doors, have been proposed.
+* **Fire Safety Infrastructure Monitoring Patents:** Technologies monitoring the status of fire extinguishers, hydrant valves, exit signs, emergency lights, and fire doors via IoT networks (US 11080988) and smart fire hydrant monitoring systems (US 8657021) have been published.
+* **NFC and Sensor Integration:** Platforms monitoring fire extinguisher pressure status using NFC and sensors (SmartFire) have been investigated.
+
+### (F) Multi-Sensor Fusion and Verification for False Alarm Suppression
+Multi-sensor cross-verification techniques have been implemented to prevent unnecessary evacuations caused by detector malfunctions.
+* **Multi-Sensor Fusion:** Studies combining temperature, smoke, and CO concentrations using fuzzy logic or neural networks have been conducted. Warehouse fire detection literature has reported a 42% reduction in false alarms and a 35% reduction in response time through multi-sensor information fusion.
+* **Physical Structures and Dual-Detection Verification:** Patents exist for issuing alarms only upon dual-detection confirmation (US 6788198), as well as patents describing U-shaped piping structures in industrial facilities (e.g., semiconductor fabs) to suppress false hydrogen gas alarms and prevent unnecessary evacuations (US 11994809).
+
+### (G) Adaptive Evacuation Guidance and Dynamic Signs
+Dynamic evacuation systems that adaptively modify guidance directions based on disaster locations have been researched.
+* **Dynamic Guidance Signage:** Research has been conducted on intelligent evacuation systems controlling sign directions based on fire locations in IoT-enabled multi-floor, multi-exit buildings.
+* **Station Evacuation and Personalized Routes:** Patents describing systems for guiding personalized dynamic exit paths for pedestrians during subway station fires have been published (US 11373492), and methods combining BIM data with real-time BLE positioning for personalized route guidance have been explored.
+
+### (H) Auditory Beacons
+Directional auditory beacons designed to provide acoustic guidance toward exit paths in dense smoke have been studied extensively.
+* **Acoustic Guidance Experimental Literature:** Research by van Wijngaarden, Bronkhorst, and Boer (2005) reported that in ship model experiments, 88% of participants followed the intended route using newly designed signals and delay methods, compared to 38% using conventional methods. Signal delays between beacons were measured at approximately 20 ms.
+* **Smoke Tunnel Experiments:** Experiments by Boer & Withington (2004) in smoke-filled tunnels confirmed exit location success rates of 16%, 21%, and 70%, depending on the level of directional indication provided.
+* **Directional Audio Patents:** Patents for directional sound beacons (US 12190717) and addressable speaker evacuation systems (US 8229131) have been published.
+
+### (I) UWB and Short-Range Wireless Evacuation Support
+Research on deploying UWB and BLE technologies for high-precision location tracking during emergency evacuations has been documented.
+* **UWB Emergency Positioning:** Studies by Zhang, Alkobaisi, Bae, and Narayanappa (2013) and related journals have addressed the rapid deployment of UWB-based indoor positioning systems to support disaster response and evacuation operations.
+
+### (J) Fire-Resistant Recording Modules and Building Black Boxes
+Concepts for record-keeping devices designed to protect evacuation logs and building telemetry during disasters exist in the literature.
+* **Fire-Resistant Storage:** According to flight recorder survivability references on SKYbrary, memory modules in flight recorders are specified to withstand temperatures of 1,100 °C for 60 minutes.
+* **Building Data Recorders:** Concept presentations on Building Data Recorders (BDR) for storing building sensor and evacuation data (e.g., Kori Technology Group, hosted on NIST) have been published, and patents for locally recording firefighter movement paths exist (US 5815126).
+
+### (K) Crowd Leader-Follower Evacuation
+The impact of informed individuals on collective crowd evacuation performance has been researched.
+* **Informed Group Evacuation:** Mathematical modeling and simulation studies (e.g., Albi et al., arXiv:2108.12231) have reported that a small minority of leaders possessing route information can significantly enhance overall crowd evacuation efficiency.
+
+### (L) Semiconductor Fab VMB Standards
+* **Industrial Safety Standards:** FM Global semiconductor facility loss prevention standards specify leak detection and interlock circuits for gas distribution equipment such as Valve Manifold Boxes (VMBs). Semiconductor manufacturing equipment environmental, health, and safety guidelines (SEMI S2) also mandate corresponding safety provisions.
+
+---
+
+### [Unverified Literature Items (Compiler Notes)]
+The following items represent specific configurations for which direct prior studies or patents were not identified during this literature review, and are listed separately as unverified conceptual classifications:
+* Specific implementations directly combining indoor fire hydrant boxes or explosion-proof enclosures as both positional reference points and data recording module containers.
+* Explicit literature dedicated specifically to emergency evacuation usage for the BLE Auracast protocol itself was not identified.
+* Explicit literature describing cold-chain and HACCP explosion-proof certified enclosures integrated as evacuation reference anchors was not identified.
+* Explicit literature proving a direct causal link between an individual wearing a haptic receiver and naturally leading surrounding evacuees was not identified.
+* System combinations linking the totality of statutory fire safety infrastructure into a unified location reference system were not identified.
+* AR glass HUD evacuation guidance frameworks were not identified (requires further literature investigation).
+
+---
+
+## 4. Notice Regarding Referenced Standards
+
+Standards mentioned in this document—including ISO 7010, ISO 15370, ISO 16069, IMO Resolution A.752(18), NFPC, KCs, SEMI S2, and SEMI S8—are public standards referenced by prior studies and literature. This material does not claim compliance with or official certification under any of these standards.
+
+---
+
+## 5. Source and Bibliographic Information
+
+### [Verified Bibliographic Records (Title, Author, Source Confirmed)]
+* Slater, Ferris, Dixon, Renshaw, Moore, Frady, Harrison et al., "Navigating in Zero-Visibility: A Haptic Guidance System for Improving Egress and Situation Awareness of Professional Firefighters," Human Factors 67(11):1152–1169, 2025, DOI 10.1177/00187208251348020
+* Tian, Salcic, Wang, Pan, "A Hybrid Indoor Localization and Navigation System with Map Matching for Pedestrians Using Smartphones," Sensors 15(12):30759–30783, 2015, DOI 10.3390/s151229827
+* van Wijngaarden, Bronkhorst, Boer, "Auditory Evacuation Beacons," J. Audio Eng. Soc. 53(1/2):44–53, 2005
+* Boer, L.C., Withington, D.J., "Auditory guidance in a smoke-filled tunnel," Ergonomics 47(10):1131–1140, 2004, DOI 10.1080/00140130410001695942
+* Zhang, Alkobaisi, Bae, Narayanappa, "Ultra wideband indoor positioning system in support of emergency evacuation," 5th ACM SIGSPATIAL International Workshop on Indoor Spatial Awareness (ISA '13), 2013
+* Van Erp, Van Veen, Jansen, Dobbins, "Waypoint navigation with a vibrotactile waist belt," ACM Transactions on Applied Perception 2(2):106–117, 2005, DOI 10.1145/1060581.1060585
+
+### [Secondary Citations (Identified from Reference Lists of Other Literature)]
+* Chen, Zou, Jiang, Zhu, Soh, Xie, "Fusion of WiFi, Smartphone Sensors and Landmarks Using the Kalman Filter for Indoor Localization," Sensors 15:715–732, 2015
+
+### [Reference Bibliography (Titles and Sources based on Search Results; Authors/Pages Unverified)]
+* ISO 15370:2021 – Low-Location Lighting Arrangement on Passenger Ships
+* Communication Aspects of Visible Light Positioning (VLP) Systems Using a Quadrature Angular Diversity Aperture (QADA) Receiver, PMC7180791
+* SearchSense: Haptic Directional Guidance for Emergency Response
+* Haptic Helmet for Emergency Responses in Virtual and Live Environments
+* Evaluating Angular Accuracy of Wrist-based Haptic Directional Guidance for Hand Movement, Hong et al., Graphics Interface 2016
+* Building Data Recorder Presentation Material (Kori Technology Group, NIST Hosted Material)
+* A multi-purpose tactile vest for astronauts in the international space station
+* Flight Data Recorder Fire Protection Regulations (SKYbrary Reference Material)
+* Indoor pedestrian navigation system using a modern smartphone
+* "The Implementation of a Smart Lifejacket for Assisting Passengers in the Evacuation of Large Passenger Ships," Applied Sciences 13(4):2522, 2023, DOI 10.3390/app13042522
+* "Effectiveness assessment and simulation of a wearable guiding device for ship evacuation," J. Mar. Sci. Technol. (2024)
+* "Using Smartphones for Indoor Fire Evacuation," Int. J. Environ. Res. Public Health 19(10):6061, 2022
+* "SmartFire: Intelligent Platform for Monitoring Fire Extinguishers and Their Building Environment," Sensors 19(10):2390, 2019
+* "Fast Deployment of a UWB-Based IPS for Emergency Response Operations," Sensors 23, 2023
+* "Warehouse Fire Detection System Based on Multi-Sensor Information Fusion," Sensors 2026, DOI 10.3390/s26123763
+* "Intelligent Evacuation Sign Control Mechanism in IoT-Enabled Multi-Floor Multi-Exit Buildings"
+* "Real-time Intelligent Exit Path Indicator Using BLE Beacon Enabled Emergency Exit Sign Controller," International Journal of Advanced Smart Convergence
+* "Wearable indoor pedestrian dead reckoning system"
+* NASA/TM–20210017508 (Tactile Cueing)
+* Albi et al., arXiv:2108.12231
+* Patents: US 11127266, US 12156316, US 11080988, US 8657021, US 6788198, US 11994809, US 11373492, US 12190717, US 8229131, US 5815126
+* IMO Res. A.752(18), SOLAS Low-Location Lighting Regulations, ISO 16069, ISO 7010, FM Global Semiconductor Loss Prevention Data Sheets (2025), SEMI S2, EN 1838
+
+---
+
+## Appendix: Compilation Process and Responsibility Notice
+
+Drafting and review tools were utilized during the preparation of this document. Final content verification and responsibility rest entirely with the data compiler.
